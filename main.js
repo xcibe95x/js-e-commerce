@@ -24,12 +24,20 @@ for (i = 0; i < jsonData.length; i++) {
     image.src = jsonData[i];
     button.append(image);
     button.classList.add("btn");
+    if (i == 0) { button.classList.add("img-active") }
 }
 
 const images = document.querySelectorAll(".btn");
 images.forEach((element) => {
     element.addEventListener("click", () => {
         mainImage.src = element.firstChild.src.replace("-thumbnail", "");
-        element.classList.add("img-active");
+        selectedImage(this);
     })
 });
+
+
+function selectedImage(button) {
+    let oldImg = document.getElementsByClassName("img-active")[0];
+    oldImg.classList.toggle("img-active");
+    button.classList.toggle("img-active");
+}
