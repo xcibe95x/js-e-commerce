@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <title>Sneakers</title>
+</head>
+
+<body>
+
+    <main>
+        <nav>
+
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Sneakers">
+            </div>
+
+            <ul>
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+            <div class="nav-items">
+                <a href="#"><img class="cart" src="./img/icon-cart.svg" alt="Cart"></a>
+                <a href="#"><img class="avatar" src="./img/image-avatar.png" alt="Profile Picture"></a>
+            </div>
+            <div id="border"></div>
+        </nav>
+
+        <div class="god-container">
+
+            <!-- Images Container -->
+            <div class="container">
+                <div class="main-image">
+                    <img id="thumb" src="img/image-product-1.jpg">
+                </div>
+                <div class="array-images">
+
+                    <button id="b1" class="sickning"><img src="./img/image-product-1-thumbnail.jpg"></button>
+                    <button id="b2" class="sickning"><img src="./img/image-product-2-thumbnail.jpg"></button>
+                    <button id="b3" class="sickning"><img src="./img/image-product-3-thumbnail.jpg"></button>
+                    <button id="b4" class="sickning"><img src="./img/image-product-4-thumbnail.jpg"></button>
+
+                </div>
+            </div>
+
+            <!-- Info Container -->
+            <div class="container">
+                <div class="info-container">
+                    <h2>SNEAKER COMPANY</h2>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem provident reprehenderit,
+                        veniam repellendus magni illo magnam hic ducimus autem, ad porro laboriosam est possimus eos
+                        reiciendis consectetur beatae quaerat?</p>
+                    <div class="price">$125.00<span class="discount">50</span></div>
+                    <span class="discounted-price">250.00</span>
+                </div>
+
+                <div class="inputs-container">
+                    <div class="numeric-input">
+                        <button id="dec" class="input-button">&minus;</button>
+                        <span id="amount">0</span>
+                        <button id="inc" class="input-button">&plus;</button>
+                    </div>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
