@@ -189,7 +189,7 @@ nav ul li {
 }
 
 
-#b1, #b2, #b3,  #b4 {
+.btn {
     width: 20%;
     border: 0;
     background: none;
