@@ -31,7 +31,7 @@ const images = document.querySelectorAll(".btn");
 images.forEach((element) => {
     element.addEventListener("click", () => {
         mainImage.src = element.firstChild.src.replace("-thumbnail", "");
-        selectedImage(this);
+        selectedImage(element);
     })
 });
 
